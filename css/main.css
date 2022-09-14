@@ -246,7 +246,7 @@ img {
 .foot-nav__mail:hover, .foot-nav__mail:focus,
 .foot-nav__tell:hover,
 .foot-nav__tell:focus {
-  color: var(--hover-logo-buttonfont-color);
+  color: #2196f3;
 }
 
 .foot-title {
