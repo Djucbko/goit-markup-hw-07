@@ -562,10 +562,8 @@ img {
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
-
-.close-button:hover,
-.close-button:focus {
-  color: var(--hover-logo-buttonfont-color);
+.close-button:hover, .close-button:focus {
+  color: #2196f3;
 }
 
 .mform {
@@ -578,7 +576,7 @@ img {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  color: #212121;
   margin-bottom: 12px;
 }
 
@@ -598,7 +596,7 @@ img {
   font-size: 12px;
   line-height: 1.16;
   margin-bottom: 4px;
-  color: var(--description-about-color);
+  color: #757575;
 }
 
 .form-input {
@@ -614,15 +612,11 @@ img {
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.form-input:hover + .form-svg,
-.form-input:focus + .form-svg {
-  fill: var(--hover-logo-buttonfont-color);
+.form-input:hover + .form-svg, .form-input:focus + .form-svg {
+  fill: #2196f3;
 }
-
-.form-input:hover,
-.form-input:focus {
-  border-color: var(--hover-logo-buttonfont-color);
+.form-input:hover, .form-input:focus {
+  border-color: #2196f3;
 }
 
 .input-svg .form-svg {
@@ -644,16 +638,14 @@ img {
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.comments:hover, .comments:focus {
+  border-color: #2196f3;
+}
 
 .comments::placeholder {
   font-size: 12px;
   line-height: 1.17;
   color: rgba(117, 117, 117, 0.5);
-}
-
-.comments:hover,
-.comments:focus {
-  border-color: var(--hover-logo-buttonfont-color);
 }
 
 .check-box-field {
@@ -669,7 +661,7 @@ img {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: var(--description-about-color);
+  color: #757575;
 }
 
 .checkbox-form {
@@ -685,6 +677,9 @@ img {
   clip-path: inset(50%);
   margin: -1px;
 }
+.checkbox-form:hover ~ .svg-no-check, .checkbox-form:focus ~ .svg-no-check {
+  fill: #2196f3;
+}
 
 .svg-no-check {
   margin-right: 7px;
@@ -699,18 +694,13 @@ img {
   opacity: 0;
 }
 
-.checkbox-form:hover ~ .svg-no-check,
-.checkbox-form:focus ~ .svg-no-check {
-  fill: var(--hover-logo-buttonfont-color);
-}
-
 .svg-check {
   position: absolute;
   margin-right: 7px;
   width: 16px;
   height: 15px;
   border-radius: 2px;
-  background-color: var(--hover-logo-buttonfont-color);
+  background-color: #2196f3;
   opacity: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -722,12 +712,10 @@ img {
 .box-link {
   margin-left: 4px;
   outline: none;
-  color: var(--hover-logo-buttonfont-color);
+  color: #2196f3;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.box-link:hover,
-.box-link:focus {
+.box-link:hover, .box-link:focus {
   text-decoration: none;
 }
 
@@ -750,15 +738,13 @@ img {
   letter-spacing: 0.03em;
   border: none;
   border-radius: 4px;
-  color: var(--text-color);
+  color: #212121;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.button-log:hover,
-.button-log:focus {
+.button-log:hover, .button-log:focus {
   color: #ffffff;
-  background: var(--hover-logo-buttonfont-color);
+  background: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -798,14 +784,14 @@ img {
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * var(--card-set-gap));
-  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: -30px;
+  margin-left: -30px;
 }
 
 .card-set > .item {
-  flex-basis: calc(33.3333333333% - var(--card-set-gap));
-  margin-left: var(--card-set-gap);
-  margin-top: var(--card-set-gap);
+  flex-basis: calc(33.3333333333% - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .p-card {
@@ -829,14 +815,14 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--text-color);
+  color: #212121;
 }
 
 .description {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
-  color: var(--description-about-color);
+  color: #757575;
 }
 
 .features-list {

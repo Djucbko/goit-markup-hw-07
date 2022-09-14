@@ -37,14 +37,14 @@
 .card-set {
     display: flex;
     flex-wrap: wrap;
-    margin-top: calc(-1 * var(--card-set-gap));
-    margin-left: calc(-1 * var(--card-set-gap));
+    margin-top: calc(-1 * $card-set-gap);
+    margin-left: calc(-1 * $card-set-gap);
 }
 
 .card-set>.item {
-    flex-basis: calc(100% / 3 - var(--card-set-gap));
-    margin-left: var(--card-set-gap);
-    margin-top: var(--card-set-gap);
+    flex-basis: calc(100% / 3 - $card-set-gap);
+    margin-left: $card-set-gap;
+    margin-top: $card-set-gap;
 }
 
 .p-card {
@@ -68,12 +68,12 @@
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: var(--text-color);
+    color: $text-color;
 }
 
 .description {
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.03em;
-    color: var(--description-about-color);
+    color: $description-about-color;
 }
