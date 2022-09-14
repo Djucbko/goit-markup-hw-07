@@ -9,8 +9,11 @@
 @import './components/media-list';
 @import './components/hero';
 @import './components/title';
-@import './components/team';
-@import './components/clients';
-@import './components/modal-list';
-@import './components/portfolio-button';
-@import './components/portolio-cards';
+
+@import './layout/team';
+@import './layout/clients';
+@import './layout/modal-list';
+@import './layout/portfolio-button';
+@import './layout/portolio-cards';
+@import './layout/features';
+@import './layout/what-we-do';

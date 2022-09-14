@@ -17,10 +17,10 @@
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     color: #ffffff;
-    background-color: var(--hover-logo-buttonfont-color);
+    background-color: $hover-logo-buttonfont-color;
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+    }
 }
 
-.modal-button:hover,
-.modal-button:focus {
-    background-color: #188ce8;
-}

@@ -1,5 +1,5 @@
 .logo-link {
-    color: var(--hover-logo-buttonfont-color);
+    color: $hover-logo-buttonfont-color;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -37,22 +37,22 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--text-color);
+    color: $text-color;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
+
+
+&.current {
+    color: $hover-logo-buttonfont-color;
 }
 
-.site-nav__link.current {
-    color: var(--hover-logo-buttonfont-color);
+&:hover,
+&:focus {
+    color: $hover-logo-buttonfont-color;
 }
 
-.site-nav__link:hover,
-.site-nav__link:focus {
-    color: var(--hover-logo-buttonfont-color);
-}
-
-.site-nav__link.current::after {
+&.current::after {
     position: absolute;
 
     display: block;
@@ -61,9 +61,11 @@
     height: 4px;
     border-radius: 2px;
     bottom: -1px;
-
-    background-color: var(--hover-logo-buttonfont-color);
-}.auth-nav {
+     background-color: $hover-logo-buttonfont-color;
+}
+   
+}
+.auth-nav {
     display: flex;
     margin-left: auto;
 }
@@ -73,7 +75,7 @@
 }
 
 .auth-nav__link {
-    color: var(--description-about-color);
+    color: $description-about-color;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,18 +89,19 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--description-about-color);
-}
+    color: $description-about-color;
 
-.auth-nav__link:hover,
-.auth-nav__link:focus {
-    color: var(--hover-logo-buttonfont-color);
+
+&:hover,
+&:focus {
+    color: $hover-logo-buttonfont-color;
 
 }
 
 .auth-nav__icon {
     fill: currentColor;
     margin-right: 10px;
+}
 }
 .footer-div {
     display: flex;
@@ -150,13 +153,13 @@
     color: #ffffff;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    &:hover,
+    &:focus {
+        color: $hover-logo-buttonfont-color;
+    }
 }
 
-.foot-nav__address:hover,
-.foot-nav__address:focus {
-    color: var(--hover-logo-buttonfont-color);
-}
+
 
 .foot-nav__mail,
 .foot-nav__tell {
@@ -167,18 +170,19 @@
     color: rgba(255, 255, 255, 0.6);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-
-.foot-nav__mail:hover,
-.foot-nav__mail:focus {
+&:hover,
+    &:focus {
+        color: $hover-logo-buttonfont-color;
+    }
+&:hover,
+&:focus {
     color: var(--hover-logo-buttonfont-color);
 }
-
-.foot-nav__tell:hover,
-.foot-nav__tell:focus {
-    color: var(--hover-logo-buttonfont-color);
 }
+
+
+
+
 
 .foot-title {
     Font-size: 14px;
@@ -210,12 +214,11 @@
     background: rgba(255, 255, 255, 0.1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.foot-contact__link:hover,
-.foot-contact__link:focus {
-    background-color: var(--hover-logo-buttonfont-color);
-}
+    &:hover,
+        &:focus {
+            background-color: $hover-logo-buttonfont-color;
+        }
+    }
 
 .mail-send {
     margin-left: auto;
@@ -247,12 +250,18 @@
     border-color: rgba(255, 255, 255, 0.3);
     background-color: #2f303a;
     color: #ffffff;
+   &:hover, 
+   &:focus{
+    border-color: $hover-logo-buttonfont-color;
+   }
+   &:hover,
+   &:focus {
+        border-color: $hover-logo-buttonfont-color;
+    }
+    
 }
 
-.mail-send .mail-input:hover,
-.mail-send .mail-input:focus {
-    border-color: var(--hover-logo-buttonfont-color);
-}
+
 
 .mail-input::placeholder {
     color: rgba(255, 255, 255, 0.6);
@@ -280,7 +289,11 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
     color: #ffffff;
-    background-color: var(--hover-logo-buttonfont-color);
+    background-color: $hover-logo-buttonfont-color;
+    &:hover,
+        &:focus {
+            background-color: #188ce8;
+    }
 }
 
 .mail-svg {
@@ -291,7 +304,3 @@
     margin-left: 10px;
 }
 
-.mail-send .mail-btn:hover,
-.mail-send .mail-btn:focus {
-    background-color: #188ce8;
-}
