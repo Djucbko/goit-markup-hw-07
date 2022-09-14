@@ -1,11 +1,12 @@
 .features-list {
     display: flex;
-    margin-left: calc(-1 * $card-set-gap);
+    margin-right: calc(1 * $card-set-gap);
+        
 }
 
 .features-list__head:not(:last-child) {
     flex-basis: calc(100% / 4 - $card-set-gap);
-    margin-left: $card-set-gap;
+        margin-right: $card-set-gap;
 }
 
 .features-list__header {
@@ -28,6 +29,7 @@
 
 .features-list__logo {
     display: flex;
+    width: 270px;
     height: 120px;
     background-color: #f5f4fa;
     margin-bottom: 30px;
