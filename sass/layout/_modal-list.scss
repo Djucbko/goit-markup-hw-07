@@ -1,8 +1,6 @@
 .backdrop {
     position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %display-justify;
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.2);
@@ -34,10 +32,7 @@
 .close-button {
     position: absolute;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    @extend %display-justify;
     right: 8px;
     top: 8px;
     background-color: transparent;

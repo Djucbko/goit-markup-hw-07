@@ -11,6 +11,12 @@
   margin: -1px;
 }
 
+.features-list__logo, .product-overlay-text, .close-button, .backdrop, .our-clients__link, .team-contact__link, .team-contact, .auth-nav__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 h1,
 h2,
 h3,
@@ -57,8 +63,8 @@ img {
 
 .container {
   width: 1200px;
-  padding-left: 15px;
   padding-right: 15px;
+  padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -72,8 +78,8 @@ img {
   border: transparent;
   outline: none;
   font-size: 16px;
-  line-height: 1.9;
   font-weight: 700;
+  line-height: 1.875;
   letter-spacing: 0.06em;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -82,6 +88,62 @@ img {
 }
 .modal-button:hover, .modal-button:focus {
   background-color: #188ce8;
+}
+
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1600px;
+  text-align: center;
+  background-color: #2f303a;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-hw4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero__title {
+  margin-bottom: 30px;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.3636363636;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hero__button {
+  min-width: 216px;
+  padding: 10px 32px;
+  cursor: pointer;
+  background-color: #2196f3;
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero__button:focus, .hero__button:hover {
+  color: #FFFFFF;
+  background-color: #188ce8;
+}
+
+.title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
 }
 
 .logo-link {
@@ -127,13 +189,17 @@ img {
   color: #212121;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.site-nav__link.current {
+
+.site-nav__link--current {
   color: #2196f3;
 }
-.site-nav__link:hover, .site-nav__link:focus {
+
+.site-nav__link:hover,
+.site-nav__link:focus {
   color: #2196f3;
 }
-.site-nav__link.current::after {
+
+.site-nav__link--current::after {
   position: absolute;
   display: block;
   content: "";
@@ -155,9 +221,6 @@ img {
 
 .auth-nav__link {
   color: #757575;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding-top: 21px;
   padding-bottom: 21px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -168,10 +231,13 @@ img {
   letter-spacing: 0.03em;
   color: #757575;
 }
-.auth-nav__link:hover, .auth-nav__link:focus {
+
+.auth-nav__link:hover,
+.auth-nav__link:focus {
   color: #2196f3;
 }
-.auth-nav__link .auth-nav__icon {
+
+.auth-nav__icon {
   fill: currentColor;
   margin-right: 10px;
 }
@@ -200,9 +266,9 @@ img {
 .logo {
   color: #2196f3;
   font-family: "Raleway";
-  font-weight: 700;
   font-size: 26px;
-  line-height: 1.19;
+  font-weight: 700;
+  line-height: 1.1923076923;
 }
 
 .logo-head {
@@ -225,7 +291,9 @@ img {
   color: #ffffff;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.foot-nav__address:hover, .foot-nav__address:focus {
+
+.foot-nav__address:hover,
+.foot-nav__address:focus {
   color: #2196f3;
 }
 
@@ -238,12 +306,12 @@ img {
   color: rgba(255, 255, 255, 0.6);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.foot-nav__mail:hover, .foot-nav__mail:focus,
-.foot-nav__tell:hover,
-.foot-nav__tell:focus {
+
+.foot-nav__mail:hover,
+.foot-nav__mail:focus {
   color: #2196f3;
 }
-.foot-nav__mail:hover, .foot-nav__mail:focus,
+
 .foot-nav__tell:hover,
 .foot-nav__tell:focus {
   color: #2196f3;
@@ -279,7 +347,9 @@ img {
   background: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.foot-contact__link:hover, .foot-contact__link:focus {
+
+.foot-contact__link:hover,
+.foot-contact__link:focus {
   background-color: #2196f3;
 }
 
@@ -311,10 +381,9 @@ img {
   background-color: #2f303a;
   color: #ffffff;
 }
-.mail-send .mail-input:hover, .mail-send .mail-input:focus {
-  border-color: #2196f3;
-}
-.mail-send .mail-input:hover, .mail-send .mail-input:focus {
+
+.mail-send .mail-input:hover,
+.mail-send .mail-input:focus {
   border-color: #2196f3;
 }
 
@@ -341,9 +410,6 @@ img {
   color: #ffffff;
   background-color: #2196f3;
 }
-.mail-btn:hover, .mail-btn:focus {
-  background-color: #188ce8;
-}
 
 .mail-svg {
   color: #ffffff;
@@ -353,60 +419,9 @@ img {
   margin-left: 10px;
 }
 
-.hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1600px;
-  text-align: center;
-  background-color: #2f303a;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-hw4.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.hero__title {
-  margin-bottom: 30px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.hero__button {
-  min-width: 216px;
-  padding: 10px 32px;
-  cursor: pointer;
-  background-color: #2196f3;
-  color: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: none;
-  border-radius: 4px;
-  text-align: center;
-  font-weight: 700;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.hero__button:focus, .hero__button:hover {
-  color: #FFFFFF;
+.mail-send .mail-btn:hover,
+.mail-send .mail-btn:focus {
   background-color: #188ce8;
-}
-
-.title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
 }
 
 .title {
@@ -463,9 +478,6 @@ img {
 }
 
 .team-contact {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-right: 0px;
 }
 
@@ -474,9 +486,6 @@ img {
 }
 
 .team-contact__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -499,9 +508,6 @@ img {
 }
 
 .our-clients__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 92px;
   border: 1px solid;
   border-radius: 4px;
@@ -519,9 +525,6 @@ img {
 
 .backdrop {
   position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
@@ -551,9 +554,6 @@ img {
 .close-button {
   position: absolute;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   right: 8px;
   top: 8px;
   background-color: transparent;
@@ -738,11 +738,19 @@ img {
   letter-spacing: 0.03em;
   border: none;
   border-radius: 4px;
-  color: #212121;
   cursor: pointer;
+  color: #212121;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button-log:hover, .button-log:focus {
+
+.button-log:hover,
+.button-log:focus {
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.button-log--current {
   color: #ffffff;
   background: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -763,9 +771,6 @@ img {
 
 .product-overlay-text {
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   content: "";
   width: 100%;
   height: 100%;
@@ -852,13 +857,10 @@ img {
 }
 
 .features-list__logo {
-  display: flex;
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
-  align-items: center;
-  justify-content: center;
 }
 
 .what-we-do {

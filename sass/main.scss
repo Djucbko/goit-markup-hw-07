@@ -1,14 +1,19 @@
 @import './utils/variables';
 @import './utils/hidden';
+@import './utils/placeholders';
+@import './utils/mixins';
 
 @import './base/base';
 @import './base/section';
 @import './base/container';
 
 @import './components/modal-button';
-@import './components/media-list';
 @import './components/hero';
 @import './components/title';
+@import './components/logo-nav';
+@import './components/site-nav';
+@import './components/auth-nav';
+@import './components/footer';
 
 @import './layout/team';
 @import './layout/clients';

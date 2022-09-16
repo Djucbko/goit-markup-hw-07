@@ -28,11 +28,10 @@
 }
 
 .features-list__logo {
-    display: flex;
+    @extend %display-justify;
     width: 270px;
     height: 120px;
     background-color: #f5f4fa;
     margin-bottom: 30px;
-    align-items: center;
-    justify-content: center;
+    
 }

@@ -54,9 +54,7 @@
 }
 
 .team-contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %display-justify;
     margin-right: calc(-1* 0px)
 }
 
@@ -65,9 +63,7 @@
 }
 
 .team-contact__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %display-justify;
     width: 44px;
     height: 44px;
     border-radius: 50%;
