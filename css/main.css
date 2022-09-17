@@ -832,12 +832,14 @@ img {
 
 .features-list {
   display: flex;
-  margin-right: 30px;
 }
 
 .features-list__head:not(:last-child) {
-  flex-basis: calc(25% - 30px);
   margin-right: 30px;
+}
+
+.features-list__head {
+  flex-basis: calc(25% - 30px);
 }
 
 .features-list__header {

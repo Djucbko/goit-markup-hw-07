@@ -1,14 +1,12 @@
 .features-list {
     display: flex;
-    margin-right: calc(1 * $card-set-gap);
-        
 }
-
 .features-list__head:not(:last-child) {
-    flex-basis: calc(100% / 4 - $card-set-gap);
-        margin-right: $card-set-gap;
+     margin-right: $card-set-gap;
 }
-
+.features-list__head {
+    flex-basis: calc(100% / 4 - $card-set-gap);
+}
 .features-list__header {
     margin-bottom: 10px;
     font-weight: 700;
